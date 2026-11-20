@@ -1,5 +1,5 @@
 // Simpan sebagai app.js
-const formatRupiah = (angka) => "Rp " + Number(angka || 0);
+const formatRupiah = (angka) => "Rp " + Number(angka || 0).toLocaleString("id-ID");
 const tbody = document.getElementById("tabel-belanja");
 const ringkasanEl = document.getElementById("ringkasan");
 const infoAnggotaEl = document.getElementById("info-anggota");
