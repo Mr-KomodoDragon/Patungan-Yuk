@@ -1,0 +1,140 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Inter", "Segoe UI", sans-serif;
+  background: #fafafa;
+  color: #111111;
+  line-height: 1.55;
+}
+.container {
+  max-width: 780px;
+  margin: 64px auto;
+  padding: 0 24px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.eyebrow {
+  margin: 0 0 8px;
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  color: #737373;
+  font-weight: 600;
+}
+h1 {
+  margin: 0 0 6px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.subtitle {
+  margin: 0;
+  font-size: 14px;
+  color: #525252;
+}
+.nav {
+  display: flex;
+  gap: 16px;
+  padding-top: 4px;
+}
+.nav a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #737373;
+  padding-bottom: 4px;
+  border-bottom: 1.5px solid transparent;
+}
+.nav a.active, .nav a:hover {
+  color: #111111;
+  border-bottom-color: #111111;
+}
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin: 28px 0;
+}
+.metric {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 16px 18px;
+}
+
+.metric-label {
+  font-size: 12px;
+  color: #737373;
+  margin-bottom: 6px;
+}
+.metric-value {
+  font-size: 20px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+.table-wrap {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  overflow-x: auto;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+th, td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+}
+th {
+  font-size: 12px;
+  font-weight: 600;
+  color: #737373;
+  background: #fcfcfc;
+}
+tbody tr:last-child td {
+  border-bottom: none;
+}
+.num {
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+.member {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+}
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.muted {
+  color: #737373;
+}
+.card-about {
+  background: #ffffff;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  padding: 20px 24px;
+  margin-top: 24px;
+  font-size: 14px;
+}
+.footer {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  color: #737373;
+}
