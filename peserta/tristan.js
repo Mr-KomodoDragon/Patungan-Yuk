@@ -1,7 +1,7 @@
 daftarBelanja.push({
   nama: "Tristan",
   item: "Air Mineral & Teh Kotak",
-  catatan: "Draft",
+  catatan: "stock minuman tim",
   nominal: 45000,
   warna: "#2563eb"
 });
