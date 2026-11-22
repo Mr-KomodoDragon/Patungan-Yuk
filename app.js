@@ -40,3 +40,6 @@ ringkasanEl.innerHTML = `
     <div class="metric-value">${formatRupiah(patunganPerOrang)}</div>
   </div>
 `;
+if (infoAnggotaEl) {
+  infoAnggotaEl.textContent = "Total kontributor tercatat: " + jumlahAnggota + " anggota";
+}
