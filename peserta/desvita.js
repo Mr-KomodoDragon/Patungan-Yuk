@@ -1,7 +1,7 @@
 daftarBelanja.push({
 nama: "Desvita",
 item: "Kue Brownies Panggang",
-catatan: "Draft",
+catatan: "Pencuci Mulut",
 nominal: 65000,
 warna: "#dc2626"
 });
