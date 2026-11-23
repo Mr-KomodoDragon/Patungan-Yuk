@@ -43,3 +43,8 @@ ringkasanEl.innerHTML = `
 if (infoAnggotaEl) {
   infoAnggotaEl.textContent = "Total kontributor tercatat: " + jumlahAnggota + " anggota";
 }
+
+if (daftarBelanja.length > 0 && infoAnggotaEl) {
+  const terbesar = daftarBelanja.reduce((max, item) => item.nominal > max.nominal ? item : max, daftarBelanja[0]);
+  infoAnggotaEl.textContent += " • Terbesar: " + terbesar.nama + " (" + formatRupiah(terbesar.nominal) + ")";
+}
